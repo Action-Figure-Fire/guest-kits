@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:#0a0a0a;color:#e8e8ef}
+.back{display:inline-block;padding:16px 24px;color:#7c5cfc;text-decoration:none;font-size:14px;font-weight:600}
+.back:hover{text-decoration:underline}
+.cover{text-align:center;padding:80px 24px;border-bottom:1px solid #2a2a3a}
+.cover h1{font-family:'Playfair Display',serif;font-size:48px;font-weight:900;color:#fff;margin-bottom:12px}
+.cover .sub{font-size:18px;font-weight:600;margin-bottom:8px}
+.cover p{color:#8888a0;max-width:500px;margin:0 auto}
+.content{max-width:800px;margin:0 auto;padding:40px 24px 80px}
+.section{margin-bottom:48px}
+.section h2{font-family:'Playfair Display',serif;font-size:28px;margin-bottom:16px;color:#fff;border-bottom:2px solid #2a2a3a;padding-bottom:12px}
+.section h3{font-size:18px;font-weight:700;margin:20px 0 8px}
+p,li{font-size:15px;line-height:1.8;color:#b0b0c0;margin-bottom:12px}
+ul,ol{padding-left:24px}
+.card-box{background:#141420;border:1px solid #2a2a3a;border-radius:12px;padding:20px;margin-bottom:12px}
+.card-box h4{font-size:16px;font-weight:700;color:#fff;margin-bottom:8px}
+.accent-box{border-left:3px solid;padding:16px;margin:12px 0;border-radius:0 8px 8px 0;background:#0a0a15}
+.tag{display:inline-block;padding:3px 10px;border-radius:12px;font-size:12px;font-weight:600;margin-top:4px}
+@media(max-width:480px){.cover h1{font-size:32px}.section h2{font-size:22px}}
+</style>
