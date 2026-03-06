@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Charleston Explorer — Scavenger Hunt</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700&display=swap');
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Inter',sans-serif;background:#0a0a0a;color:#e8e8ef}
+  .back{display:inline-block;padding:16px 24px;color:#7c5cfc;text-decoration:none;font-size:14px;font-weight:600}
+  .cover{text-align:center;padding:80px 24px;background:linear-gradient(135deg,#0a1a10 0%,#0a2a1a 50%,#0a0a0a 100%);border-bottom:1px solid #2a2a3a}
+  .cover h1{font-family:'Playfair Display',serif;font-size:48px;font-weight:900;color:#fff;margin-bottom:12px}
+  .cover .sub{font-size:18px;color:#34d399;font-weight:600;margin-bottom:8px}
+  .cover p{color:#8888a0;max-width:500px;margin:0 auto}
+  .content{max-width:800px;margin:0 auto;padding:40px 24px 80px}
+  .section{margin-bottom:48px}
+  .section h2{font-family:'Playfair Display',serif;font-size:28px;margin-bottom:16px;color:#fff;border-bottom:2px solid #2a2a3a;padding-bottom:12px}
+  p{font-size:15px;line-height:1.8;color:#b0b0c0;margin-bottom:12px}
+  .stop{background:#141420;border:1px solid #2a2a3a;border-radius:12px;padding:24px;margin-bottom:16px}
+  .stop-num{display:inline-block;background:#34d399;color:#0a0a0a;width:28px;height:28px;border-radius:50%;text-align:center;line-height:28px;font-size:13px;font-weight:700;margin-right:8px}
+  .stop-name{font-size:18px;font-weight:700;color:#fff;display:inline}
+  .stop-addr{font-size:13px;color:#34d399;margin:4px 0 12px;display:block}
+  .challenge{background:#0a1a10;border:1px solid #1a3a2a;border-radius:8px;padding:14px;margin-top:12px}
+  .challenge-label{font-size:11px;font-weight:700;color:#34d399;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+  .riddle{font-style:italic;color:#e8e8ef;font-size:14px}
+  .points{display:inline-block;background:rgba(52,211,153,0.12);color:#34d399;padding:3px 10px;border-radius:12px;font-size:12px;font-weight:600;margin-top:8px}
+  .bonus{background:#1a1a0a;border:1px solid #3a3a1a;border-radius:8px;padding:14px;margin-top:12px}
+  .bonus-label{font-size:11px;font-weight:700;color:#f59e0b;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+  .score-sheet{background:#141420;border:1px solid #2a2a3a;border-radius:12px;padding:24px}
+  .score-row{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid #1a1a2a;font-size:14px}
+  .score-row:last-child{border:none}
+  .total{font-weight:700;color:#34d399;font-size:18px}
+  @media(max-width:480px){.cover h1{font-size:32px}}
+</style>
+</head>
+<body>
+<a class="back" href="index.html">← Back to StayBox</a>
+
+<div class="cover">
+  <div style="font-size:14px;color:#34d399;font-weight:600;margin-bottom:16px">🗺️ SCAVENGER HUNT — SAMPLE</div>
+  <h1>Charleston Explorer</h1>
+  <div class="sub">Downtown Charleston, SC — Walking Adventure</div>
+  <p>10 stops. Hidden gems. Local secrets. 2-3 hours on foot. Best played in teams of 2-4.</p>
+</div>
+
+<div class="content">
+  <div class="section">
+    <h2>📋 Rules</h2>
+    <p><strong>How to play:</strong> Visit each stop in order. Complete the challenge. Earn points. Take photos as proof. Highest score wins.</p>
+    <p><strong>Bonus points</strong> are available at most stops for going above and beyond. Total possible: 200 points.</p>
+    <p><strong>Tie-breaker:</strong> Fastest completion time wins.</p>
+  </div>
+
+  <div class="section">
+    <h2>📍 The Hunt</h2>
+
+    <div class="stop">
+      <span class="stop-num">1</span><div class="stop-name">The Battery & White Point Garden</div>
+      <span class="stop-addr">2 Murray Blvd — Start here</span>
+      <p>Where cannons watch the harbor and oak trees have seen centuries. The most photographed spot in Charleston.</p>
+      <div class="challenge">
+        <div class="challenge-label">📸 Photo Challenge</div>
+        <div class="riddle">Find the cannon pointing toward Fort Sumter. Take a group photo pretending to fire it.</div>
+        <div class="points">10 pts</div>
+      </div>
+      <div class="bonus">
+        <div class="bonus-label">⭐ Bonus</div>
+        <p style="font-size:13px;color:#f59e0b">Count the cannons in the park. Exact number = 10 bonus pts.</p>
+      </div>
+    </div>
+
+    <div class="stop">
+      <span class="stop-num">2</span><div class="stop-name">Rainbow Row</div>
+      <span class="stop-addr">83-107 East Bay St — 5 min walk</span>
+      <p>13 pastel-colored historic houses. Originally merchant shops in the 1700s, painted to help drunk sailors find their way home. Seriously.</p>
+      <div class="challenge">
+        <div class="challenge-label">🧩 Riddle</div>
+        <div class="riddle">"I'm the color of the sea on a calm day, and I sit between two warm neighbors. What house number am I?"</div>
+        <div class="points">15 pts</div>
+      </div>
+    </div>
+
+    <div class="stop">
+      <span class="stop-num">3</span><div class="stop-name">The Old Exchange & Provost Dungeon</div>
+      <span class="stop-addr">122 East Bay St — 2 min walk</span>
+      <p>Built in 1771. George Washington was entertained here. Pirates were imprisoned in the dungeon below. The building has layers — literally.</p>
+      <div class="challenge">
+        <div class="challenge-label">🔍 Find It</div>
+        <div class="riddle">Find the historical plaque on the east wall. What year was the building completed? Text it to the game master.</div>
+        <div class="points">10 pts</div>
+      </div>
+    </div>
+
+    <div class="stop">
+      <span class="stop-num">4</span><div class="stop-name">Waterfront Park & Pineapple Fountain</div>
+      <span class="stop-addr">1 Vendue Range — 6 min walk</span>
+      <p>The pineapple is Charleston's symbol of hospitality. This fountain is the most Instagrammed spot in the city.</p>
+      <div class="challenge">
+        <div class="challenge-label">📸 Photo Challenge</div>
+        <div class="riddle">Recreate the "jumping in front of the fountain" photo. Most creative jump wins.</div>
+        <div class="points">15 pts</div>
+      </div>
+      <div class="bonus">
+        <div class="bonus-label">⭐ Bonus</div>
+        <p style="font-size:13px;color:#f59e0b">Find a local to take your photo AND tell you one fact about the park. +10 pts</p>
+      </div>
+    </div>
+
+    <div class="stop">
+      <span class="stop-num">5</span><div class="stop-name">Church Street — Hidden Alley</div>
+      <span class="stop-addr">Between 89 & 91 Church St</span>
+      <p>Charleston is full of "single houses" — one room wide, built sideways to catch the breeze. Between two of them is an alley most tourists walk right past.</p>
+      <div class="challenge">
+        <div class="challenge-label">🔍 Find It</div>
+        <div class="riddle">Find the hidden garden gate between 89 and 91 Church Street. What color is it? Photo proof required.</div>
+        <div class="points">20 pts — This one's tricky</div>
+      </div>
+    </div>
+
+    <div class="stop">
+      <span class="stop-num">6</span><div class="stop-name">City Market</div>
+      <span class="stop-addr">188 Meeting St — 5 min walk</span>
+      <p>Running for over 200 years. The sweetgrass basket weavers here practice an art form passed down from West African ancestors through the Gullah Geechee culture.</p>
+      <div class="challenge">
+        <div class="challenge-label">🗣️ Talk to a Local</div>
+        <div class="riddle">Find a sweetgrass basket weaver. Ask how long it takes to make one basket. Report back with the answer.</div>
+        <div class="points">15 pts</div>
+      </div>
+    </div>
+
+    <div class="stop">
+      <span class="stop-num">7</span><div class="stop-name">Blind Tiger Pub</div>
+      <span class="stop-addr">36 Broad St — 7 min walk</span>
+      <p>One of the oldest bars in Charleston. During Prohibition, bars advertised "come see our blind tiger" — code for "we serve booze." The name stuck.</p>
+      <div class="challenge">
+        <div class="challenge-label">🍺 Refreshment Stop</div>
+        <div class="riddle">Order something. Take a photo of your drink with the bar sign visible. Ask the bartender for their favorite Charleston secret.</div>
+        <div class="points">10 pts + hydration</div>
+      </div>
+    </div>
+
+    <div class="stop">
+      <span class="stop-num">8</span><div class="stop-name">St. Michael's Church</div>
+      <span class="stop-addr">71 Broad St — 1 min walk</span>
+      <p>Built in 1761. The steeple has been painted black (to hide it from enemy ships), white, and once — accidentally — the wrong shade of cream, which caused a city-wide scandal.</p>
+      <div class="challenge">
+        <div class="challenge-label">🧩 Riddle</div>
+        <div class="riddle">"I ring every quarter hour and have survived wars, earthquakes, and hurricanes. I was cast in London. How many bells do I have in my tower?"</div>
+        <div class="points">15 pts</div>
+      </div>
+    </div>
+
+    <div class="stop">
+      <span class="stop-num">9</span><div class="stop-name">King Street Shopping District</div>
+      <span class="stop-addr">King St between Broad & Market</span>
+      <p>The most walkable shopping street in the South. Upper King = restaurants, Middle King = fashion, Lower King = antiques.</p>
+      <div class="challenge">
+        <div class="challenge-label">📸 Photo Challenge</div>
+        <div class="riddle">Find the most unusual storefront on King Street. Photo it. The group votes on whose find is best.</div>
+        <div class="points">15 pts</div>
+      </div>
+    </div>
+
+    <div class="stop">
+      <span class="stop-num">10</span><div class="stop-name">Finish: Callie's Hot Little Biscuit</div>
+      <span class="stop-addr">476 King St</span>
+      <p>You've earned it. The best biscuits in the South. This is not up for debate.</p>
+      <div class="challenge">
+        <div class="challenge-label">🏆 Final Challenge</div>
+        <div class="riddle">Order the signature biscuit. Rate it 1-10. Take a group victory photo. You're done!</div>
+        <div class="points">15 pts</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>📊 Score Sheet</h2>
+    <div class="score-sheet">
+      <div class="score-row"><span>Team Name: ____________</span><span>Start Time: ______</span></div>
+      <div class="score-row"><span>Stop 1 — Battery</span><span>____ / 20</span></div>
+      <div class="score-row"><span>Stop 2 — Rainbow Row</span><span>____ / 15</span></div>
+      <div class="score-row"><span>Stop 3 — Old Exchange</span><span>____ / 10</span></div>
+      <div class="score-row"><span>Stop 4 — Pineapple Fountain</span><span>____ / 25</span></div>
+      <div class="score-row"><span>Stop 5 — Hidden Alley</span><span>____ / 20</span></div>
+      <div class="score-row"><span>Stop 6 — City Market</span><span>____ / 15</span></div>
+      <div class="score-row"><span>Stop 7 — Blind Tiger</span><span>____ / 10</span></div>
+      <div class="score-row"><span>Stop 8 — St. Michael's</span><span>____ / 15</span></div>
+      <div class="score-row"><span>Stop 9 — King Street</span><span>____ / 15</span></div>
+      <div class="score-row"><span>Stop 10 — Callie's</span><span>____ / 15</span></div>
+      <div class="score-row total"><span>TOTAL</span><span>____ / 160</span></div>
+      <div class="score-row"><span>End Time: ______</span><span>Elapsed: ______</span></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
