@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Murder at Tidal Manor — Murder Mystery Kit</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700&display=swap');
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Inter',sans-serif;background:#0a0a0a;color:#e8e8ef}
+  .back{display:inline-block;padding:16px 24px;color:#7c5cfc;text-decoration:none;font-size:14px;font-weight:600}
+  .back:hover{text-decoration:underline}
+  .cover{text-align:center;padding:80px 24px;background:linear-gradient(135deg,#1a0520 0%,#2a0a1a 50%,#0a0a0a 100%);border-bottom:1px solid #2a2a3a}
+  .cover h1{font-family:'Playfair Display',serif;font-size:52px;font-weight:900;margin-bottom:12px;color:#fff}
+  .cover .sub{font-size:18px;color:#ec4899;font-weight:600;margin-bottom:8px}
+  .cover p{color:#8888a0;max-width:500px;margin:0 auto}
+  .content{max-width:800px;margin:0 auto;padding:40px 24px 80px}
+  .section{margin-bottom:48px}
+  .section h2{font-family:'Playfair Display',serif;font-size:28px;margin-bottom:16px;color:#fff;border-bottom:2px solid #2a2a3a;padding-bottom:12px}
+  .section h3{font-size:18px;font-weight:700;color:#ec4899;margin:20px 0 8px}
+  p,.section li{font-size:15px;line-height:1.8;color:#b0b0c0;margin-bottom:12px}
+  ul,ol{padding-left:24px}
+  .char-card{background:#141420;border:1px solid #2a2a3a;border-radius:12px;padding:20px;margin-bottom:12px}
+  .char-name{font-size:16px;font-weight:700;color:#fff;margin-bottom:4px}
+  .char-role{font-size:13px;color:#ec4899;margin-bottom:8px}
+  .char-desc{font-size:14px;color:#8888a0;line-height:1.6}
+  .char-secret{background:#1a0a15;border:1px dashed #ec4899;border-radius:8px;padding:12px;margin-top:10px;font-size:13px;color:#ec4899}
+  .clue-box{background:#0a0a15;border-left:3px solid #7c5cfc;padding:16px;margin:12px 0;border-radius:0 8px 8px 0}
+  .clue-box .clue-title{font-weight:700;color:#7c5cfc;margin-bottom:4px;font-size:14px}
+  .timeline{position:relative;padding-left:24px;border-left:2px solid #2a2a3a}
+  .timeline-item{margin-bottom:24px;position:relative}
+  .timeline-item::before{content:'';position:absolute;left:-29px;top:4px;width:12px;height:12px;background:#7c5cfc;border-radius:50%}
+  .timeline-time{font-size:12px;color:#7c5cfc;font-weight:600;margin-bottom:4px}
+  .print-note{text-align:center;padding:20px;background:#141420;border-radius:12px;margin-top:40px;font-size:13px;color:#8888a0}
+  @media print{body{background:#fff;color:#222}.cover{background:#f5f5f5;border:none}.cover h1{color:#222}.char-card{border-color:#ddd;background:#fafafa}.clue-box{background:#f0f0f5}}
+  @media(max-width:480px){.cover h1{font-size:32px}.section h2{font-size:22px}}
+</style>
+</head>
+<body>
+<a class="back" href="index.html">← Back to StayBox</a>
+
+<div class="cover">
+  <div style="font-size:14px;color:#7c5cfc;font-weight:600;margin-bottom:16px">🔪 MURDER MYSTERY KIT — SAMPLE</div>
+  <h1>Murder at Tidal Manor</h1>
+  <div class="sub">A Beach House Whodunit for 6-8 Players</div>
+  <p>Someone didn't survive the weekend. One of you knows why. Duration: 2-3 hours. No costumes required.</p>
+</div>
+
+<div class="content">
+  <div class="section">
+    <h2>🎭 Host Guide</h2>
+    <p><strong>Setup time:</strong> 15 minutes. Print character cards, hide clue envelopes in 4 locations around the house. That's it.</p>
+    <p><strong>What you need:</strong> This printed kit, 6-8 players, drinks (strongly recommended), and one person willing to be the host (they can also play).</p>
+
+    <h3>How It Works</h3>
+    <ol>
+      <li>Hand out character cards (sealed — players read privately)</li>
+      <li>Read the opening scene aloud</li>
+      <li>Round 1: Introductions & alibis (20 min)</li>
+      <li>Round 2: Clue discovery — send players to find hidden envelopes (20 min)</li>
+      <li>Round 3: Accusations & interrogation (20 min)</li>
+      <li>Final vote — everyone writes their guess</li>
+      <li>Read the reveal script</li>
+    </ol>
+  </div>
+
+  <div class="section">
+    <h2>📖 The Story</h2>
+    <p>It's Saturday morning at Tidal Manor, a stunning beachfront rental on the Outer Banks. Eight friends reunited for a weekend getaway — their first time together since college. But when the group gathers for breakfast, <strong>Marcus Bellweather</strong> is found dead at the bottom of the widow's walk stairs.</p>
+    <p>The doors were locked from inside. The storm knocked out cell service. Nobody's leaving until the truth comes out.</p>
+    <p>The medical examiner (that's you, host) estimates time of death between <strong>11 PM and 1 AM</strong>. Everyone claims they were asleep. Someone's lying.</p>
+  </div>
+
+  <div class="section">
+    <h2>👥 Characters</h2>
+
+    <div class="char-card">
+      <div class="char-name">Sloane Whitfield</div>
+      <div class="char-role">The Organizer — Marcus's ex-girlfriend</div>
+      <div class="char-desc">Booked the house. Still has Marcus's Netflix password. Claims she's "totally over it." Went to bed at 10 PM — alone.</div>
+      <div class="char-secret">🤫 SECRET: You saw Marcus arguing with Jack on the deck at 11:15 PM. You didn't tell anyone because you were supposed to be in your room.</div>
+    </div>
+
+    <div class="char-card">
+      <div class="char-name">Jack Reeves</div>
+      <div class="char-role">The Best Friend — Marcus's college roommate</div>
+      <div class="char-desc">Loud, funny, life of the party. He and Marcus started a business together that failed. Says he was watching a movie in the den until midnight.</div>
+      <div class="char-secret">🤫 SECRET: Marcus owed you $40,000 from the failed business. You confronted him on the deck at 11 PM. It got heated. You shoved him. He walked away alive — you think.</div>
+    </div>
+
+    <div class="char-card">
+      <div class="char-name">Dr. Priya Nair</div>
+      <div class="char-role">The Overachiever — the group's token success story</div>
+      <div class="char-desc">Surgeon. Calm under pressure. Was in the kitchen making tea at 11:30 PM. Heard nothing unusual.</div>
+      <div class="char-secret">🤫 SECRET: You're being sued for malpractice. Marcus found out and was going to tell the group — he thought it was "hilarious gossip." You needed him to stay quiet.</div>
+    </div>
+
+    <div class="char-card">
+      <div class="char-name">Tate Gallagher</div>
+      <div class="char-role">The Drifter — showed up uninvited</div>
+      <div class="char-desc">Nobody's seen Tate in 3 years. Arrived Friday afternoon with a backpack and no explanation. Was "taking a walk on the beach" between 10 PM and midnight.</div>
+      <div class="char-secret">🤫 SECRET: You came to the reunion because Marcus had been blackmailing you. You have a criminal record nobody knows about. You needed it to stop.</div>
+    </div>
+
+    <div class="char-card">
+      <div class="char-name">Harper Quinn</div>
+      <div class="char-role">The Social Media Star — 2M followers</div>
+      <div class="char-desc">Was live-streaming the sunset at 9 PM. Claims she took a sleeping pill and was out cold by 10:30. Her phone died — conveniently.</div>
+      <div class="char-secret">🤫 SECRET: Your "brand" is fake. Marcus found your burner account where you buy followers. He DMed you about it Thursday night. You deleted the messages.</div>
+    </div>
+
+    <div class="char-card">
+      <div class="char-name">Leo Chen</div>
+      <div class="char-role">The Quiet One — Marcus's business partner (current)</div>
+      <div class="char-desc">Soft-spoken. Reads a lot. Was in the upstairs study "reading" from 9 PM onward. Nobody saw him until morning.</div>
+      <div class="char-secret">🤫 SECRET: You discovered Marcus was embezzling from your shared company. $200K missing. You confronted him at 12:30 AM on the widow's walk. He laughed at you.</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>🔍 Clue Packets</h2>
+    <p><em>Hide these in envelopes around the house. Players find them during Round 2.</em></p>
+
+    <div class="clue-box">
+      <div class="clue-title">CLUE #1 — Found in the kitchen</div>
+      <p>A broken wine glass in the trash. Red wine stain on the counter. A napkin with writing: "Deck. 11 PM. We need to talk. —J"</p>
+    </div>
+
+    <div class="clue-box">
+      <div class="clue-title">CLUE #2 — Found under a couch cushion</div>
+      <p>Marcus's phone (cracked screen). Last text sent at 11:47 PM to an unsaved number: "I know what you did and I have proof. Meet me upstairs." Last text received at 11:52 PM: "On my way."</p>
+    </div>
+
+    <div class="clue-box">
+      <div class="clue-title">CLUE #3 — Found in the upstairs bathroom</div>
+      <p>A damp towel with a small bloodstain. A receipt from a hardware store dated Friday: "1x rope, 1x flashlight." Purchased with cash.</p>
+    </div>
+
+    <div class="clue-box">
+      <div class="clue-title">CLUE #4 — Found on the back deck</div>
+      <p>Scuff marks on the railing. A torn piece of fabric — dark blue, matches Leo's jacket. A financial document showing wire transfers from "Bellweather & Chen LLC" to an offshore account.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>⏱️ Timeline</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-time">9:00 PM</div>
+        <p>Group finishes dinner. Harper streams sunset. People drift off.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">10:00 PM</div>
+        <p>Sloane goes to bed. Tate leaves for a "beach walk."</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">11:00 PM</div>
+        <p>Jack meets Marcus on the deck. Argument. Shoving. Marcus walks away.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">11:15 PM</div>
+        <p>Sloane sees the argument from her window.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">11:30 PM</div>
+        <p>Priya in kitchen making tea. Hears footsteps upstairs.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">11:47 PM</div>
+        <p>Marcus texts someone: "I know what you did."</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">11:52 PM</div>
+        <p>Reply: "On my way." </p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">12:00–12:30 AM</div>
+        <p>💀 Marcus dies. Pushed from the widow's walk.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>🎯 The Reveal</h2>
+    <p><em>Read this after everyone votes:</em></p>
+    <p>The killer is <strong>Leo Chen</strong>.</p>
+    <p>Leo discovered Marcus was embezzling $200,000 from their company. He confronted Marcus on the widow's walk at 12:30 AM. Marcus laughed and said "What are you going to do about it?" Leo shoved him over the railing. The torn jacket fabric on the deck railing is Leo's. The hardware store receipt was Leo's — he bought the rope planning to stage it as a suicide but panicked and fled when Marcus fell.</p>
+    <p>Jack's argument was real but unrelated. Priya had motive but no opportunity (kitchen alibi confirmed by tea kettle timestamp on the smart home system). Tate was on the beach — wet sand on his shoes confirms it. Harper's phone actually died (battery confirmed at 0% by police later). Sloane saw the Jack argument but nothing after.</p>
+    <p><strong>If your group guessed Leo — they win! 🎉</strong></p>
+  </div>
+
+  <div class="print-note">
+    🖨️ <strong>Print this page</strong> for the full experience. Cut out character cards and clue packets, seal in envelopes. Pro tip: print character secrets separately so players only see their own.
+  </div>
+</div>
+</body>
+</html>
