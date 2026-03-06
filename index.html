@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StayBox — Guest Experience Kits</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Inter',sans-serif;background:#0a0a0a;color:#e8e8ef;min-height:100vh}
+  .hero{text-align:center;padding:80px 24px 60px;background:linear-gradient(135deg,#1a0a2e 0%,#0a1628 50%,#0a0a0a 100%)}
+  .hero h1{font-size:48px;font-weight:800;margin-bottom:12px;background:linear-gradient(135deg,#7c5cfc,#4a9eff);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+  .hero p{font-size:18px;color:#8888a0;max-width:600px;margin:0 auto 32px}
+  .badge{display:inline-block;background:rgba(124,92,252,0.15);color:#7c5cfc;padding:6px 16px;border-radius:20px;font-size:13px;font-weight:600;margin-bottom:24px}
+  .grid{max-width:1100px;margin:0 auto;padding:0 24px 80px;display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:20px}
+  .card{background:#141420;border:1px solid #2a2a3a;border-radius:16px;overflow:hidden;transition:all 0.2s;text-decoration:none;color:inherit;display:block}
+  .card:hover{border-color:#7c5cfc;transform:translateY(-4px);box-shadow:0 8px 32px rgba(124,92,252,0.15)}
+  .card-img{height:180px;display:flex;align-items:center;justify-content:center;font-size:64px}
+  .card-body{padding:20px}
+  .card-title{font-size:18px;font-weight:700;margin-bottom:8px}
+  .card-desc{font-size:13px;color:#8888a0;line-height:1.6;margin-bottom:16px}
+  .card-tag{display:inline-block;padding:4px 10px;border-radius:6px;font-size:11px;font-weight:600}
+  .t-purple{background:rgba(124,92,252,0.12);color:#7c5cfc}
+  .t-green{background:rgba(52,211,153,0.12);color:#34d399}
+  .t-orange{background:rgba(245,158,11,0.12);color:#f59e0b}
+  .t-blue{background:rgba(74,158,255,0.12);color:#4a9eff}
+  .t-pink{background:rgba(236,72,153,0.12);color:#ec4899}
+  .footer{text-align:center;padding:40px 24px;color:#55556a;font-size:13px;border-top:1px solid #1a1a2a}
+  @media(max-width:480px){.hero h1{font-size:32px}.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="badge">✨ Sample Collection</div>
+  <h1>StayBox</h1>
+  <p>Premium guest experience kits for Airbnb hosts. Printable PDFs that turn good stays into unforgettable ones.</p>
+</div>
+<div class="grid">
+  <a class="card" href="murder-mystery.html">
+    <div class="card-img" style="background:linear-gradient(135deg,#1a0520,#2a0a2a)">🔪</div>
+    <div class="card-body">
+      <div class="card-title">Murder Mystery Party Kit</div>
+      <div class="card-desc">Complete whodunit for 6-8 players. Character cards, clue packets, host guide, and reveal script. Themed for a beach house setting.</div>
+      <span class="card-tag t-purple">Most Popular</span>
+    </div>
+  </a>
+  <a class="card" href="scavenger-hunt.html">
+    <div class="card-img" style="background:linear-gradient(135deg,#0a1a20,#0a2a1a)">🗺️</div>
+    <div class="card-body">
+      <div class="card-title">City Scavenger Hunt</div>
+      <div class="card-desc">Self-guided walking adventure with riddles, photo challenges, and local hidden gems. Sample: Downtown Charleston, SC.</div>
+      <span class="card-tag t-green">High Value</span>
+    </div>
+  </a>
+  <a class="card" href="escape-room.html">
+    <div class="card-img" style="background:linear-gradient(135deg,#1a1a0a,#2a1a0a)">🔐</div>
+    <div class="card-body">
+      <div class="card-title">Escape Room in a Box</div>
+      <div class="card-desc">Printable puzzles, ciphers, and clues that transform any space into a 60-minute escape challenge. No props needed.</div>
+      <span class="card-tag t-orange">Group Favorite</span>
+    </div>
+  </a>
+  <a class="card" href="restaurant-guide.html">
+    <div class="card-img" style="background:linear-gradient(135deg,#1a0a0a,#2a1510)">🍽️</div>
+    <div class="card-body">
+      <div class="card-title">Local Restaurant & Bar Guide</div>
+      <div class="card-desc">Curated insider picks with must-order dishes, happy hours, and vibe ratings. Sample: Virginia Beach, VA.</div>
+      <span class="card-tag t-pink">Essential</span>
+    </div>
+  </a>
+  <a class="card" href="date-night.html">
+    <div class="card-img" style="background:linear-gradient(135deg,#2a0a1a,#1a0a2a)">💕</div>
+    <div class="card-body">
+      <div class="card-title">Couples' Date Night Kit</div>
+      <div class="card-desc">Conversation cards, would-you-rather, couples trivia, wine tasting scorecard, and curated playlist links.</div>
+      <span class="card-tag t-pink">Romantic Stays</span>
+    </div>
+  </a>
+  <a class="card" href="kids-activity.html">
+    <div class="card-img" style="background:linear-gradient(135deg,#0a1a2a,#1a2a0a)">🧒</div>
+    <div class="card-body">
+      <div class="card-title">Kids Activity Pack</div>
+      <div class="card-desc">Word searches, trivia, scavenger hunts, and coloring activities themed to the destination. Ages 5-12.</div>
+      <span class="card-tag t-blue">Family Stays</span>
+    </div>
+  </a>
+  <a class="card" href="cocktails.html">
+    <div class="card-img" style="background:linear-gradient(135deg,#1a100a,#0a1a1a)">🍹</div>
+    <div class="card-body">
+      <div class="card-title">Cocktail & Mocktail Recipe Book</div>
+      <div class="card-desc">12 themed drinks with shopping lists, step-by-step instructions, and food pairing suggestions.</div>
+      <span class="card-tag t-orange">Crowd Pleaser</span>
+    </div>
+  </a>
+  <a class="card" href="trip-planner.html">
+    <div class="card-img" style="background:linear-gradient(135deg,#0a0a1a,#1a0a1a)">📋</div>
+    <div class="card-body">
+      <div class="card-title">Trip Planner & Itineraries</div>
+      <div class="card-desc">Day-by-day suggested itineraries for adventure, relaxation, foodie, and family trips. 3, 5, and 7-day versions.</div>
+      <span class="card-tag t-blue">Practical</span>
+    </div>
+  </a>
+  <a class="card" href="trivia-night.html">
+    <div class="card-img" style="background:linear-gradient(135deg,#1a1a0a,#0a1a2a)">🧠</div>
+    <div class="card-body">
+      <div class="card-title">Trivia Night Kit</div>
+      <div class="card-desc">4 themed rounds (General, Pop Culture, Local History, Wild Card), scorecards, and host script. 50+ questions.</div>
+      <span class="card-tag t-green">Game Night</span>
+    </div>
+  </a>
+  <a class="card" href="wellness.html">
+    <div class="card-img" style="background:linear-gradient(135deg,#0a1a10,#0a2a1a)">🧘</div>
+    <div class="card-body">
+      <div class="card-title">Wellness & Recovery Guide</div>
+      <div class="card-desc">Morning routines, stretching flows, meditation prompts, local trail maps, and healthy restaurant picks.</div>
+      <span class="card-tag t-green">Wellness Stays</span>
+    </div>
+  </a>
+</div>
+<div class="footer">StayBox Sample Collection — Built by Olga 🦉 for Zach</div>
+</body>
+</html>
